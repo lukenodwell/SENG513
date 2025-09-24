@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section {
+    background-color: #f8f8f8;
+    color: #333;
+    background-image: url('images/background-extra-small.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+.features-section {
+    background-color: orange;
+    background-image: url('images/flourish.png');
+}
+
+.welcome-title {
+    color: #ffffff;
+}
+
+/* Small screens */
+@media (min-width: 576px) {
+    .hero-section {
+        background-image: url('images/background-small.jpg');
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+    .hero-section {
+        background-image: url('images/background-medium.jpg');
+    }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .hero-section {
+        background-image: url('images/background-large.jpg');
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+    .hero-section {
+        background-image: url('images/background-extra-large.jpg');
+    }
+}
+
+.feature {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.about-section {
+    background-color: #d0d0d0;
+}
+
+.cta-section {
+    background-color: #c0c0c0;
+    color: #fff;
+}
+
+.company-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
