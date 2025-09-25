@@ -44,10 +44,10 @@ footer {
 @media (min-width: 768px) {
     .hero-section {
         background-image: url('images/background-medium.jpg');
-    }
 
-    .welcome-title {
-        color: orange;
+        .welcome-title {
+            color: orange;
+        }
     }
 }
 
@@ -87,8 +87,59 @@ footer {
     color: #fff;
 }
 
-.company-image {
+/* .company-image {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
+} */
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    /* Makes button bigger */
+    padding: 10px 20px;
+    /* Rounds the edges of the button */
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.company-image {
+    margin: auto;
+    width: 60%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Small screens */
+@media (min-width: 576px) {
+    .company-image {
+        background-image: url('images/image-small.png');
+    }
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+    .company-image {
+        background-image: url('images/image-medium.png');
+    }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .company-image {
+        background-image: url('images/image-large.png');
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+    .company-image {
+        background-image: url('images/image-extra-large.png');
+    }
 }
