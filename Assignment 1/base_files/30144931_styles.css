@@ -4,7 +4,9 @@ body {
     padding: 0;
 }
 
-header, section, footer {
+header,
+section,
+footer {
     text-align: center;
     padding: 20px;
 }
@@ -20,18 +22,21 @@ header, section, footer {
 }
 
 .features-section {
+    /* Orange was a color pick for the background */
     background-color: orange;
+    /* Purple is a compliment color for the text */
+    color: purple;
     background-image: url('images/flourish.png');
-}
-
-.welcome-title {
-    color: #ffffff;
 }
 
 /* Small screens */
 @media (min-width: 576px) {
     .hero-section {
         background-image: url('images/background-small.jpg');
+
+        .welcome-title {
+            color: yellow;
+        }
     }
 }
 
@@ -40,12 +45,20 @@ header, section, footer {
     .hero-section {
         background-image: url('images/background-medium.jpg');
     }
+
+    .welcome-title {
+        color: orange;
+    }
 }
 
 /* Large screens */
 @media (min-width: 992px) {
     .hero-section {
         background-image: url('images/background-large.jpg');
+
+        .welcome-title {
+            color: navy;
+        }
     }
 }
 
@@ -53,6 +66,10 @@ header, section, footer {
 @media (min-width: 1200px) {
     .hero-section {
         background-image: url('images/background-extra-large.jpg');
+
+        .welcome-title {
+            color: white;
+        }
     }
 }
 
